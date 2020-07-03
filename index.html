@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign in</title>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ss
+{
+	
+	margin-top:10%;
+	opacity:0.9;
+}
+</style>
+</head>
+<body>
+<img src="download.png" style="align:center">
+<form action="index.html">
+<div class="ss">
+<center>Email <input id="email" type="email"></center><br>
+<center>password <input type="password"></center>
+</div>
+<br><br>
+<center><button onclick="validate()" type="submit" value="SIGN IN" >SIGN IN</button></center>
+
+</form>
+
+<script>
+function validate()
+{
+	var email=document.getElementById("email").value;
+	var pass=document.getElementById("password").value;
+	window.alert("enter valid email this time");
+	if(email=="forEpam@gmail.com")
+	{
+		window.location.href="https://www.epam.com/";
+	}
+	else
+	{	
+		window.alert("enter valid email this time");
+	}
+	return false;
+}
+
+
+</script>
+
+</body>
+
+
+</html>
